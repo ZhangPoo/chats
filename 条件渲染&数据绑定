@@ -1,0 +1,74 @@
+<!--pages/person/person.wxml-->
+<view>作者：{{ person.name}}，{{person.age}}，{{person.sex}}</view>
+<text>相关作品：{{books[0]}}，{{books[1]}}，{{books[2]}}</text>
+<block>
+年龄相关：
+<view wx:if="{{person.age>16}}">这个是个高中毕业生</view>
+<view wx:else>耶！你这个初中生写作能力强哦</view>
+</block>
+<!-- block多模块渲染 -->
+<block wx:if="{{weather == '晴天'}}">
+<view>你说的是周杰伦的晴天吗</view>
+<view>那我就给你唱一首晴天吧</view>
+</block>
+
+<block wx:elif="{{weather == '阴天'}}">
+<view>你说的是莫文蔚的阴天吗</view>
+<view>那我就给你唱一首阴天吧</view>
+</block>
+<block wx:else>
+<view>你就是冬天里的一把火！！</view>
+<view>你就是冬天里的一把火！！</view>
+</block>
+-----------------------------------------------------------------------------------------------------------------------------
+// pages/person/person.js
+Page({
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    person:{"name":"张三","age":16,"sex":"男"},
+    books:["斗破苍穹","斗罗大陆","凡人修仙传"],
+    weather:"晴天"
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  },
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  },
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  },
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  },
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  }
+})
