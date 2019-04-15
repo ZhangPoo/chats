@@ -1,0 +1,13 @@
+<view wx:for="{{actors}}" wx:for-item="actors" 
+wx:for="{{actorsWithhobby}}" wx:for-item="actorsWithhobby">
+<view>{{actors}}:{{actorsWithhobby}}</view>
+</view>
+---------------------------------------------------------------------------------------------------
+data: {
+    actors:["Jay","Jack","Nick","Nicholas"],
+    actorsWithhobby:{
+      Jay:"奶茶", 
+      Jack:"穿西装打领带", 
+      Nick:"渣渣辉",
+      Nicholas:"十二道锋味"
+  }
