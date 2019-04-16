@@ -1,13 +1,11 @@
-<view wx:for="{{actors}}" wx:for-item="actors" 
-wx:for="{{actorsWithhobby}}" wx:for-item="actorsWithhobby">
-<view>{{actors}}:{{actorsWithhobby}}</view>
+<view wx:for="{{actors}}" wx:for-item="person">
+{{person.name}}:{{person.hobby}}
 </view>
 ---------------------------------------------------------------------------------------------------
 data: {
-    actors:["Jay","Jack","Nick","Nicholas"],
-    actorsWithhobby:{
-      Jay:"奶茶", 
-      Jack:"穿西装打领带", 
-      Nick:"渣渣辉",
-      Nicholas:"十二道锋味"
+    actors: [{ name: "Jay",hobby:"奶茶"},
+      { name: "Jack",hobby:"穿西装打领带" },
+      { name: "Nick",hobby:"渣渣辉" },
+      { name: "Nicholas",hobby:"十二道锋味" }]
   }
+<!-- 使用 wx:for-item 指定数组当前元素的变量名,不可与遍历对象同名 -->
