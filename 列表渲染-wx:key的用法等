@@ -16,6 +16,7 @@ tap:function(event){
 </view>
 <button bindtap='tap'>更新</button>
 -------------------------------------------------------------------
+key值必须为数据中的唯一值
 .splice(A，B，{数据})方法：A---起始位置，B---是否删除当前位置数据（0/1）
 可参考：
  https://www.cnblogs.com/JdsyJ/p/8603891.html
