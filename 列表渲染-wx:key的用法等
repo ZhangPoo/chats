@@ -1,0 +1,21 @@
+JS：
+tap:function(event){
+    var actors = this.data.actors;
+    actors.splice(0,0,{
+      name: "成龙",
+      hobby: "打醉拳懂我意思吧"
+    });
+    this.setData({
+      actors:actors
+    })
+  }
+  -----------------------------------------------------------------
+ WXML：
+<view wx:for="{{actors}}" wx:for-item="person" wx:key="name">
+<switch>{{person.name}}:{{person.hobby}}</switch>
+</view>
+<button bindtap='tap'>更新</button>
+-------------------------------------------------------------------
+.splice(A，B，{数据})方法：A---起始位置，B---是否删除当前位置数据（0/1）
+可参考：
+ https://www.cnblogs.com/JdsyJ/p/8603891.html
