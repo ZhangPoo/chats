@@ -1,0 +1,26 @@
+app.json:
+"tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1ADD16",
+    "list": [
+      {
+        "pagePath": "pages/person/person",
+        "text": "消息",
+        "iconPath": "pages/images/tabbar1-selected.png",---未选中时的图标
+        "selectedIconPath": "pages/images/tabbar1.png"---选中时的图标（都存放于目录中）
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "联系人",
+        "iconPath": "pages/images/tabbar2.png",
+        "selectedIconPath": "pages/images/tabbar2-selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "动态",
+        "iconPath": "pages/images/tabbar3.png",
+        "selectedIconPath": "pages/images/tabbar3-selected.png"
+      }
+    ]
+  }
+ 
