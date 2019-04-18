@@ -24,3 +24,11 @@ app.json:
     ]
   }
  
+ 
+ "pages": [
+    "pages/person/person",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tpl/qq/qq",
+    "pages/tpl/weixin/weixin"
+  ],------------------------------加载页面（顺序调整即可改变渲染顺序）
