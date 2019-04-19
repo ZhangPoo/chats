@@ -1,0 +1,4 @@
+<!--pages/tpl/weixin/weixin.wxml-->
+<import src="../../../template/message/message.wxml" />
+<template is="message" data="{{content:'你还真的就是鸽中之王',friend:'陈奕迅'}}">
+</template>
