@@ -1,4 +1,3 @@
 <!--pages/tpl/qq/qq.wxml-->
 <import src="../../../template/message/message.wxml" />
-<template is="message" data="{{content:'我就是鸽中之王',friend:'周杰伦'}}"></template>
-<template is="message" data="{{...singer}}"></template>
+<template is="message" wx:for="{{person}}" data="{{content:item.content,friend:item.friend,time:item.time}}"></template>
