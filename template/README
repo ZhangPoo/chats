@@ -25,3 +25,7 @@ Page({
 <template is="msgItem" data="{{...message}}"/>
 另外，如果想使用模板的样式文件，也需要在 wxss 文件中导入模板的 wxss 文件。示例代码如下：
 @import "../../../templates/msgItem.wxss";
+
+
+
+在使用时，如若要更改，在模板文件中添加删除页面标签即可，数据在实际文件中更改
