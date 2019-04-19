@@ -1,1 +1,27 @@
 
+有些时候，一段布局代码我们需要在多个地方使用，那么我们可以将其定义成模板，然后把变量单独抽取出来，通
+过调用模板的时候再传递过去。示例代码如下：
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+调用模板：
+<import src="../../templates/msgItem.wxml" />
+<template is="msgItem" data="{{index:1,msg:"你好！",time:3000年10月22日}}"/>
+在传递变量的时候第三节：WXML语法，如果是直接从js文件中获取到的，那么可以通过 ...item 的方式来展开显
+示。示例代码如下：
+Page({
+  data: {
+    message: {
+    index: 1,
+    msg: '你好！',
+    time: '2018年10月22日'
+      }
+    }
+  });
+<import src="../../templates/msgItem.wxml" />
+<template is="msgItem" data="{{...message}}"/>
+另外，如果想使用模板的样式文件，也需要在 wxss 文件中导入模板的 wxss 文件。示例代码如下：
+@import "../../../templates/msgItem.wxss";
