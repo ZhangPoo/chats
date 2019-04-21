@@ -22,4 +22,4 @@ inner view
  </view>
 </view>
 如图：
-！[image](https://github.com/ZhPo/chats/blob/master/pages/%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1%E5%92%8C%E9%98%BB%E6%AD%A2/event.png)
+![image](https://github.com/ZhPo/chats/blob/master/pages/%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1%E5%92%8C%E9%98%BB%E6%AD%A2/event.png)
