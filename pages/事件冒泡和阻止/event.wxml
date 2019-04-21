@@ -1,0 +1,12 @@
+<!--pages/event/event.wxml-->
+<button bindtap='onButtonClick'>弹出</button>
+<view class='song-group' wx:for="{{song}}" bindtap='onSongClick' data-id='{{item.id}}' data-name='{{item.name}}' wx:key='id' >
+{{item.name}}
+<view class='lyricview' catchtap='onLyricViewClick'>窗外的麻雀，在电线杆上多嘴</view>
+</view>
+<view class='outterview' bindtap='onOutterViewClick'>
+<view class='innerview' catchtap='onInnerViewClick'>
+<view class='blackview' bindtap='onBlackViewClick'>
+</view>
+</view>
+</view>
