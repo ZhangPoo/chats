@@ -21,7 +21,7 @@ inner view
   </view>
  </view>
 </view>
-如图：
+event项目创建如图：
 
 
 
