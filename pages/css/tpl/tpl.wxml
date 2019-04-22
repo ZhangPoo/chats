@@ -1,0 +1,14 @@
+<template name='tpl'>
+  <view class='songs-group'>
+  <view class='info-group'>
+    <view class='title'>{{title}}</view>
+    <view class='more-group'>
+      <text class='author'>{{author}}</text>
+      <text class='time'>{{time}}</text>
+    </view>
+  </view>
+  <view class='thumbnail-group'>
+    <image class='thumbnail' src='{{image}}'></image>
+  </view>
+</view>
+</template>
