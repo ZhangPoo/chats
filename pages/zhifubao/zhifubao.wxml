@@ -6,7 +6,7 @@
         <input class='search-input' placeholder='支付宝'></input>
       </view>
       <view class='more-group'>
-        <image src='images/01.png'></image>
+        <image src='images/01.png' bindtap='onPersonClick'></image>
         <image src='images/02.png'></image>
       </view>
     </view>
