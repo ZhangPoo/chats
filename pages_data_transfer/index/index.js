@@ -32,5 +32,21 @@ Page({
       })
       console.log(id+name)
     }
-  }
+  },
+  onWordsClick: function(e) {
+    var dataset = e.currentTarget.dataset;
+    var id = dataset.id;
+    if (id == 0) {
+      wx.showToast({
+        title: '您可憋喝了!!',
+      })
+    } else if (id == 1) {
+      wx.showToast({
+        title: '十二道锋味!!',
+      })
+    } else if (id == 2) {
+      wx.showToast({
+        title: '贝加尔湖畔好听!',
+      })
+    }
 })
