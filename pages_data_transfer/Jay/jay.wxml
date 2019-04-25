@@ -1,0 +1,3 @@
+<!--pages/Jay/jay.wxml-->
+<view>id:{{id}}</view>
+<view>姓名:{{name}}</view>
