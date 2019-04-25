@@ -1,0 +1,34 @@
+/* pages/template/template.wxss */
+.info-group{
+  height: 120rpx;
+  border-bottom: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  padding: 10rpx 10rpx;
+}
+.info-group .person-group{
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between
+}
+.person-group .person-words{
+  background-image: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=255820472,3712711141&fm=26&gp=0.jpg');
+  flex: 1;
+  border-radius: 20rpx;
+  text-align: center
+}
+.person-group .person-name{
+  font-size: 28rpx;
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  border: 0.5rpx solid gray;
+  box-sizing: border-box;
+  border-radius: 20rpx
+}
+.person-group image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx
+}

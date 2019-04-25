@@ -1,0 +1,11 @@
+<!--pages/template/template.wxml-->
+<template name='tpl'>
+  <view class='info-group'>
+    <view class='person-group'>
+      <view class='person-name box' bindtap='onNameClick' data-id='{{id}}' data-name='{{name}}'>{{name}}</view>
+      <view class='person-words box' bindtap='onWordsClick'>{{words}}</view>
+      <image class='box' src='{{headimage}}'></image>
+    </view>
+  </view>
+
+</template>
