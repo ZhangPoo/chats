@@ -24,7 +24,7 @@
   justify-content: center;
   background: whitesmoke;
   border: 0.5rpx solid gray;
-  box-sizing: border-box;
+  box-sizing: border-box; /** 边框线不越界，保持模型大小  */
   border-radius: 20rpx
 }
 .person-group image{
