@@ -32,7 +32,7 @@
 
 　　Ctrl+U：光标回退
 
-快速新建页面：app.js->pages->新建文件
+快速新建页面：直接在app.js中pages的快速注册即可
 
 
 
