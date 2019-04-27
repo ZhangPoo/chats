@@ -1,0 +1,5 @@
+<view>{{username}}</view>
+<view>{{container.country}}</view>
+<view>{{container.city}}</view>
+<view wx:for='{{place}}'>{{item}}</view>
+<button bindtap='onToNextClick'>跳转</button>
