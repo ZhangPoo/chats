@@ -16,14 +16,18 @@ Page({
   },
 
   submitEvent:function(event){
-    var content = event.detail.value.content
-    var pages = getCurrentPages();
-    var page = pages[0];
-    var weibos = page.data.weibos;
-    weibos.push(content);
+    /**
+     * 传值content
+     */
+    var content = event.detail.value.content//获取文本框内的信息
+    var pages = getCurrentPages();//获取当前的两个页面
+    var page = pages[0];//获取将要渲染数据的页面
+    var weibos = page.data.weibos;//获取list页面的weibos
+    weibos.push(content);//将值放进去
     page.setData({
       weibos:weibos
     })
     wx.navigateBack({})
+  }
   }
 })
