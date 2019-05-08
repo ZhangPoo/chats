@@ -1,0 +1,7 @@
+onToastClick: function() {
+    wx.showToast({
+      title: '这个弹窗就太舒服了，icon可以none，美滋滋',
+      icon: 'none',/** icon可设置none，duration设置弹窗显示时长*/
+      duration: 1000
+    })
+  }
