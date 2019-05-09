@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<scroll-view class='scroll-view' scroll-x="{{true}}" bindscroll='onBindScrollEvent'>
+  <!-- bindscroll用法：
+    滚动条滚动即触发，同时可获取滚动时的值——js中查看代码 -->
+  <view class='scroll-item bg_red'></view>
+  <view class='scroll-item bg_yellow'></view>
+  <view class='scroll-item bg_blue'></view>
+  <view class='scroll-item bg_pink'></view>
+  <view class='scroll-item bg_black'></view>
+</scroll-view>
+
+<scroll-view class='scroll-view-y' scroll-y="{{true}}" scroll-into-view="pink" scroll-with-animation
+bindscrolltoupper="onUpperEvent"><!--scroll-into-view指定滚动到某个veiw，且此view需设置id，如下-->
+  <!-- srcoll-top用法：
+    srcoll-top="50":距离顶部50个像素点
+  scroll-with-animation用法:
+    设置滚动条的动画效果——直接放入标签
+  enable-back-to-top:
+    双击标题栏滚动条返回顶部（模拟器无效果，建议上真机）
+  bindscrolltoupper用法：
+    滚动到顶部的事件，默认距离为50，upper-threshold属性可设置——>upper-threshold='100'(为100像素点)
+    bindscrolltolower同理 lower-threshold -->
+  <view class='scroll-item-y bg_red' id='red' bindtap='onToastClick'></view>
+  <view class='scroll-item-y bg_yellow' id='yellow' bindtap='onToastClick'></view>
+  <view class='scroll-item-y bg_blue' id='blue' bindtap='onToastClick'></view>
+  <view class='scroll-item-y bg_pink' id='pink' bindtap='onToastClick'></view>
+  <view class='scroll-item-y bg_black' id='black' bindtap='onToastClick'></view>
+</scroll-view>
